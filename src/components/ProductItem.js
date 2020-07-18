@@ -11,11 +11,11 @@ class ProductItem extends Component {
         <div className="container">
           <div className="row">
             <div className="col-sm-3">
-              <center><img width="200px" height="200px;" src={"Image/" +this.state.item.image}></img></center>
-              <h1> {this.item.id} </h1>
-              <center><h3> {this.state.item.title} </h3></center>
-              <p> {this.state.item.price}.VNĐ </p>
-              <p> {this.state.item.oldPrice}.VNĐ </p>
+              <center><img width="200px" height="200px;" src={"Image/" +this.props.item.image}></img></center>
+              <h1> {this.props.item.id} </h1>
+              <center><h3> {this.props.item.title} </h3></center>
+              <p> {this.props.item.price}.VNĐ </p>
+              <p> {this.props.item.oldPrice}.VNĐ </p>
               <center><button class="btn btn-success" onClick={this.props.onItemClick}>Dat mua</button></center>
             </div>
           </div>
